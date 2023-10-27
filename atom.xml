@@ -42,16 +42,16 @@
     <link href="http://example.com/2023/10/26/firstBlog/"/>
     <id>http://example.com/2023/10/26/firstBlog/</id>
     <published>2023-10-26T14:20:39.271Z</published>
-    <updated>2023-10-26T14:29:48.848Z</updated>
+    <updated>2023-10-27T09:44:07.566Z</updated>
     
-    <content type="html"><![CDATA[<p>欢迎你来到我的博客网站！这是我的一方小天地呀~</p><p>这里将会记录我的学习和知识…</p>]]></content>
+    <content type="html"><![CDATA[<p>欢迎你来到我的博客网站！这是我的一方小天地呀~</p><p>这里将会记录我的学习和知识…</p><h3 id="搭建bolg资料和网站"><a href="#搭建bolg资料和网站" class="headerlink" title="搭建bolg资料和网站"></a>搭建bolg资料和网站</h3><p>在线md： <a href="https://pandao.github.io/editor.md/">https://pandao.github.io/editor.md/</a><br>Butterfly 主题的详细配置：<br><a href="https://liangshenglei.github.io/2023/03/06/Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/index.html">https://liangshenglei.github.io/2023/03/06/Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/index.html</a><br>背景：<br>1.Hexo-Butterfly主题优化-设置网站首页显示背景、文章最上方不显示背景 <a href="https://blog.csdn.net/zzq0523/article/details/122954271">https://blog.csdn.net/zzq0523/article/details/122954271</a><br>2. Butterfly主题优化首页大图加载效果 <a href="http://demian.wang/2021/06/05/Butterfly%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E9%A6%96%E9%A1%B5%E5%A4%A7%E5%9B%BE%E5%8A%A0%E8%BD%BD%E6%95%88%E6%9E%9C/">http://demian.wang/2021/06/05/Butterfly%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E9%A6%96%E9%A1%B5%E5%A4%A7%E5%9B%BE%E5%8A%A0%E8%BD%BD%E6%95%88%E6%9E%9C/</a></p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;欢迎你来到我的博客网站！这是我的一方小天地呀~&lt;/p&gt;
 &lt;p&gt;这里将会记录我的学习和知识…&lt;/p&gt;
-</summary>
+&lt;h3 id=&quot;搭建bolg资料和网站&quot;&gt;&lt;a href=&quot;#搭建bolg资料和网站&quot; class=&quot;headerlink&quot; title=&quot;搭建bolg资料和网站&quot;&gt;&lt;/a&gt;</summary>
       
     
     
