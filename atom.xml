@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-10-30T08:53:29.047Z</updated>
+  <updated>2023-10-30T12:15:03.078Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue学习笔记</title>
+    <link href="http://example.com/2023/10/30/vue/"/>
+    <id>http://example.com/2023/10/30/vue/</id>
+    <published>2023-10-30T11:57:56.358Z</published>
+    <updated>2023-10-30T12:15:03.078Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="vue学习笔记"><a href="#vue学习笔记" class="headerlink" title="vue学习笔记"></a>vue学习笔记</h1><h2 id="初识vue"><a href="#初识vue" class="headerlink" title="初识vue"></a>初识vue</h2><ul><li>想让vue工作，必须创建一个<strong>vue实例</strong>，且要传入一个配置对象；</li><li>root容器里的代码依然符号html规范，只不过混入一个特殊的vue语法</li><li>root容器里的代码被称为【vue模板】</li><li>真实开发中只有<strong>一个</strong>vue实例，并且会配合组件一起使用；</li><li>vue实例和容器是一一对应的</li><li>中的xxx要写js的表达式，且xxx可以自动读取到data中的所有属性；</li><li>一旦data中的数据发生改变，那么页面中用到的数据地方会自动更新 </li><li>注意区分js表达式和js代码（语句）<br>1.表达式：一个表达式会产生一个值，可以放在任何一个需要值的地方<br>（1）a<br>（2）a+b<br>（3）demo（1）<br>（4）x&#x3D;&#x3D;&#x3D;y？‘a’：‘b’<br>2.js代码&#x2F;js语句<br>（1）if（）{}<br>（2）for（）{}</li></ul><pre><code class="html">&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;    &lt;title&gt;初始vue&lt;/title&gt;    &lt;script type=&quot;text/javascript&quot; src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;    &lt;!-- 准备好一个容器 --&gt;    &lt;div id=&quot;root&quot;&gt;        &lt;h1&gt;Hello,&#123;&#123;name&#125;&#125;，&#123;&#123;address&#125;&#125;&lt;/h1&gt;    &lt;/div&gt;    &lt;script type=&quot;text/javascript&quot;&gt;        Vue.config.productionTip = false//设置为 false 以阻止 vue 在启动时生成生产提示        //创建vue实例        new Vue(&#123;            el: &#39;#root&#39;,//el用于指定当前vue实例为哪个容器服务，植通常为css选择器字符串。            data: &#123;//data用于存储数据，数据供el所指定的容器去使用，值我们暂时先写成一个对象                name: &#39;尚硅谷123&#39;,                address: &#39;深圳&#39;            &#125;        &#125;)    &lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre><h2 id="两类模板语法"><a href="#两类模板语法" class="headerlink" title="两类模板语法"></a>两类模板语法</h2><ul><li>插值语法：</li></ul><p>功能：用于解析标签体的内容</p><p>写法，xxx是js的表达式，且可以直接读取到data中的所有属性</p><ul><li>指令语法</li></ul><p>功能：用于解析标签（包括：标签属性，标签体内容，绑定事件。。。）</p><p>举例：v-bind：herf&#x3D;“xxx”或 简写为 ：herf&#x3D;“xxx”，xxx同样为js的表达式且可以直接读取到data中的所有属性。</p><p>备注：vue有很多指令，且都有v-…的形式</p><pre><code class="js">&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;    &lt;title&gt;vue模板&lt;/title&gt;    &lt;script type=&quot;text/javascript&quot; src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;    &lt;div id=&quot;root&quot;&gt;        &lt;h1&gt;插值语法&lt;/h1&gt;        &lt;h3&gt;你好，&#123;&#123;name&#125;&#125;&lt;/h3&gt;        &lt;hr /&gt;        &lt;h1&gt;指令语法&lt;/h1&gt;        &lt;a v-bind:href=&quot;school.url.toUpperCase()&quot; x=&quot;hello&quot;&gt;点我去&#123;&#123;school.name&#125;&#125;学习2&lt;/a&gt;        &lt;a :href=&quot;school.url&quot; x=&quot;hello&quot;&gt;点我去&#123;&#123;school.name&#125;&#125;学习1&lt;/a&gt;    &lt;/div&gt;    &lt;script type=&quot;text/javascript&quot;&gt;        Vue.config.productionTip = false        new Vue(&#123;            el: &#39;#root&#39;,            data: &#123;                name: &#39;jack&#39;,                school: &#123;                    name: &#39;尚硅谷&#39;,                    url: &#39;http://www.atguigu.com&#39;,                &#125;            &#125;        &#125;)    &lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre><h2 id="数据绑定-2种方式"><a href="#数据绑定-2种方式" class="headerlink" title="数据绑定-2种方式"></a>数据绑定-2种方式</h2><p>1，单项数据绑定 v-bind<br>数据只能从data里面流向页面<br><img src="/pic/vue_1.png" alt="v-bind" title="v-bind"><br>2，双向数据绑定 v-model<br>数据不仅能从data流向页面，还可以从页面流向data</p><p>备注：：<br>1，双向绑定一般都引用在表单类元素上（如：input，select等）<br>2，v-model：value可以简写为v-model，因为v-model默认收集的就是value的值<br><img src="/pic/vue_2.png" alt="v-model" title="v-model"><br>3.v-bind：value简写为：value<br>4. v-model :value&#x3D;”name简写为v-model&#x3D;”name”</p><pre><code class="js">&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;    &lt;title&gt;Document&lt;/title&gt;    &lt;script type=&quot;text/javascript&quot; src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;    &lt;!-- 准备好一个容器 --&gt;    &lt;div id=&quot;root&quot;&gt;        单项数据绑定：&lt;input type=&quot;text&quot; :value=&quot;name&quot;&gt;&lt;br /&gt;        双项数据绑定：&lt;input type=&quot;text&quot; v-model:value=&quot;name&quot;&gt;&lt;br /&gt;           &lt;/div&gt;    &lt;script type=&quot;text/javascript&quot;&gt;        Vue.config.productionTip = false//设置为 false 以阻止 vue 在启动时生成生产提示        new Vue(&#123;            el: &#39;#root&#39;,            data: &#123;                name: &#39;尚硅谷&#39;            &#125;        &#125;)    &lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;vue学习笔记&quot;&gt;&lt;a href=&quot;#vue学习笔记&quot; class=&quot;headerlink&quot; title=&quot;vue学习笔记&quot;&gt;&lt;/a&gt;vue学习笔记&lt;/h1&gt;&lt;h2 id=&quot;初识vue&quot;&gt;&lt;a href=&quot;#初识vue&quot; class=&quot;headerlink&quot; ti</summary>
+      
+    
+    
+    
+    <category term="web前端" scheme="http://example.com/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="vue" scheme="http://example.com/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>Web前端篇（1）</title>
