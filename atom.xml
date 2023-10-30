@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-10-27T05:15:48.711Z</updated>
+  <updated>2023-10-30T08:53:29.047Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,34 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>面试准备篇（1）</title>
+    <title>Web前端篇（1）</title>
     <link href="http://example.com/2023/10/27/study/"/>
     <id>http://example.com/2023/10/27/study/</id>
     <published>2023-10-27T05:08:02.221Z</published>
-    <updated>2023-10-27T05:15:48.711Z</updated>
+    <updated>2023-10-30T08:53:29.047Z</updated>
     
-    <content type="html"><![CDATA[<p>嗨~这里是在网上找到的一些资料或者b站视频后整理的一些知识点，接下来会不断更新…</p><h3 id="css高频"><a href="#css高频" class="headerlink" title="css高频"></a>css高频</h3><h4 id="快速居中对齐的方式有："><a href="#快速居中对齐的方式有：" class="headerlink" title="快速居中对齐的方式有："></a>快速居中对齐的方式有：</h4><pre><code class="html">&lt;style&gt;.box&#123;display：flex；margin：auto;&#125;&lt;/style&gt;</code></pre><h4 id="margin和padding有什么不同？"><a href="#margin和padding有什么不同？" class="headerlink" title="margin和padding有什么不同？"></a>margin和padding有什么不同？</h4><p>padding是内边距，是作用于自身的，而margin是作用于外部的</p><h4 id="vw和百分比的区别？"><a href="#vw和百分比的区别？" class="headerlink" title="vw和百分比的区别？"></a>vw和百分比的区别？</h4><p>百分比有继承关系<br>vw不管父级，只和视口有关</p><h4 id="行内块级元素"><a href="#行内块级元素" class="headerlink" title="行内块级元素"></a>行内块级元素</h4><p>行内元素不换行，不设置大小，大小由内容决定</p><h6 id="如何让谷歌浏览器支持小字体？"><a href="#如何让谷歌浏览器支持小字体？" class="headerlink" title="如何让谷歌浏览器支持小字体？"></a>如何让谷歌浏览器支持小字体？</h6><p>通过缩放把他字体改成多少倍</p><pre><code class="css">.box&#123;transform：scale(0.8)-webkit-transform:scale(0.8)&#125;</code></pre><h3 id="js高频"><a href="#js高频" class="headerlink" title="js高频"></a>js高频</h3><h4 id="let和var"><a href="#let和var" class="headerlink" title="let和var"></a>let和var</h4><p> -Var<br>1）声明提升：先用后定义，无报错（（先上车后买票<br>2）没有局部作用域：在for循环之外仍可以（（红杏出墙<br>3）声明覆盖：同一个变量名被二次定义后，前面那个会被覆盖（let不行（（套牌车</p><h4 id="深拷贝与浅拷贝"><a href="#深拷贝与浅拷贝" class="headerlink" title="深拷贝与浅拷贝"></a>深拷贝与浅拷贝</h4><p>基本数据类型没有深浅拷贝之说，一定要讲<strong>基本数据类型</strong>就是是<strong>深拷贝</strong></p><pre><code class="js">let a=5;let b=a;b=3;console.log(a,b)</code></pre><h4 id="下面这种newArr会不会改变arr"><a href="#下面这种newArr会不会改变arr" class="headerlink" title="下面这种newArr会不会改变arr?"></a>下面这种newArr会不会改变arr?</h4><pre><code class="js">let arr = [1,2,3];let newArr =[...arr];newArr.push(4);console.log(arr, newArr)</code></pre><p><strong>会！浅拷贝</strong><br>数组与对象的赋值都叫做浅拷贝</p><h4 id="数组与对象的赋值都叫做浅拷贝"><a href="#数组与对象的赋值都叫做浅拷贝" class="headerlink" title="数组与对象的赋值都叫做浅拷贝??"></a>数组与对象的赋值都叫做浅拷贝??</h4><pre><code class="JS">let arr2 = [[1,2,3], [4, 5, 6]];let newArr2 = [...arr2];newArr2[0].push(888);console.log(arr2, newArr2)</code></pre><p><strong>不会！解构赋值深拷贝</strong><br>解构赋值如果针对一维数组和对象，是深拷贝。</p>]]></content>
+    <content type="html"><![CDATA[<p>嗨~这里是在网上找到的一些资料或者b站视频后整理的一些知识点，接下来会不断更新…<br>…</p><h3 id="css高频"><a href="#css高频" class="headerlink" title="css高频"></a>css高频</h3><h4 id="快速居中对齐的方式有："><a href="#快速居中对齐的方式有：" class="headerlink" title="快速居中对齐的方式有："></a>快速居中对齐的方式有：</h4><pre><code class="html">&lt;style&gt;.box&#123;display：flex；margin：auto;&#125;&lt;/style&gt;</code></pre><h4 id="margin和padding有什么不同？"><a href="#margin和padding有什么不同？" class="headerlink" title="margin和padding有什么不同？"></a>margin和padding有什么不同？</h4><p>padding是内边距，是作用于自身的，而margin是作用于外部的</p><h4 id="vw和百分比的区别？"><a href="#vw和百分比的区别？" class="headerlink" title="vw和百分比的区别？"></a>vw和百分比的区别？</h4><p>百分比有继承关系<br>vw不管父级，只和视口有关</p><h4 id="行内块级元素"><a href="#行内块级元素" class="headerlink" title="行内块级元素"></a>行内块级元素</h4><p>行内元素不换行，不设置大小，大小由内容决定</p><h6 id="如何让谷歌浏览器支持小字体？"><a href="#如何让谷歌浏览器支持小字体？" class="headerlink" title="如何让谷歌浏览器支持小字体？"></a>如何让谷歌浏览器支持小字体？</h6><p>通过缩放把他字体改成多少倍</p><pre><code class="css">.box&#123;transform：scale(0.8)-webkit-transform:scale(0.8)&#125;</code></pre><h3 id="js高频"><a href="#js高频" class="headerlink" title="js高频"></a>js高频</h3><h4 id="let和var"><a href="#let和var" class="headerlink" title="let和var"></a>let和var</h4><p> -Var<br>1）声明提升：先用后定义，无报错（（先上车后买票<br>2）没有局部作用域：在for循环之外仍可以（（红杏出墙<br>3）声明覆盖：同一个变量名被二次定义后，前面那个会被覆盖（let不行（（套牌车</p><h4 id="深拷贝与浅拷贝"><a href="#深拷贝与浅拷贝" class="headerlink" title="深拷贝与浅拷贝"></a>深拷贝与浅拷贝</h4><p>基本数据类型没有深浅拷贝之说，一定要讲<strong>基本数据类型</strong>就是是<strong>深拷贝</strong></p><pre><code class="js">let a=5;let b=a;b=3;console.log(a,b)</code></pre><h4 id="下面这种newArr会不会改变arr"><a href="#下面这种newArr会不会改变arr" class="headerlink" title="下面这种newArr会不会改变arr?"></a>下面这种newArr会不会改变arr?</h4><pre><code class="js">let arr = [1,2,3];let newArr =[...arr];newArr.push(4);console.log(arr, newArr)</code></pre><p><strong>会！浅拷贝</strong><br>数组与对象的赋值都叫做浅拷贝</p><h4 id="数组与对象的赋值都叫做浅拷贝"><a href="#数组与对象的赋值都叫做浅拷贝" class="headerlink" title="数组与对象的赋值都叫做浅拷贝??"></a>数组与对象的赋值都叫做浅拷贝??</h4><pre><code class="JS">let arr2 = [[1,2,3], [4, 5, 6]];let newArr2 = [...arr2];newArr2[0].push(888);console.log(arr2, newArr2)</code></pre><p><strong>不会！解构赋值深拷贝</strong><br>解构赋值如果针对一维数组和对象，是深拷贝。</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;嗨~这里是在网上找到的一些资料或者b站视频后整理的一些知识点，接下来会不断更新…&lt;/p&gt;
-&lt;h3 id=&quot;css高频&quot;&gt;&lt;a href=&quot;#css高频&quot; class=&quot;headerlink&quot; title=&quot;css高频&quot;&gt;&lt;/a&gt;css高频&lt;/h3&gt;&lt;h4 id=&quot;快速居中对</summary>
+    <summary type="html">&lt;p&gt;嗨~这里是在网上找到的一些资料或者b站视频后整理的一些知识点，接下来会不断更新…&lt;br&gt;…&lt;/p&gt;
+&lt;h3 id=&quot;css高频&quot;&gt;&lt;a href=&quot;#css高频&quot; class=&quot;headerlink&quot; title=&quot;css高频&quot;&gt;&lt;/a&gt;css高频&lt;/h3&gt;&lt;h4 id=&quot;</summary>
       
     
     
     
+    <category term="web前端" scheme="http://example.com/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="css" scheme="http://example.com/tags/css/"/>
+    
+    <category term="js" scheme="http://example.com/tags/js/"/>
     
   </entry>
   
   <entry>
-    <title>Alice的第一篇Blog</title>
+    <title>Alice&#39;s First Blog</title>
     <link href="http://example.com/2023/10/26/firstBlog/"/>
     <id>http://example.com/2023/10/26/firstBlog/</id>
     <published>2023-10-26T14:20:39.271Z</published>
-    <updated>2023-10-27T09:44:07.566Z</updated>
+    <updated>2023-10-30T08:58:12.997Z</updated>
     
-    <content type="html"><![CDATA[<p>欢迎你来到我的博客网站！这是我的一方小天地呀~</p><p>这里将会记录我的学习和知识…</p><h3 id="搭建bolg资料和网站"><a href="#搭建bolg资料和网站" class="headerlink" title="搭建bolg资料和网站"></a>搭建bolg资料和网站</h3><p>在线md： <a href="https://pandao.github.io/editor.md/">https://pandao.github.io/editor.md/</a><br>Butterfly 主题的详细配置：<br><a href="https://liangshenglei.github.io/2023/03/06/Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/index.html">https://liangshenglei.github.io/2023/03/06/Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/index.html</a><br>背景：<br>1.Hexo-Butterfly主题优化-设置网站首页显示背景、文章最上方不显示背景 <a href="https://blog.csdn.net/zzq0523/article/details/122954271">https://blog.csdn.net/zzq0523/article/details/122954271</a><br>2. Butterfly主题优化首页大图加载效果 <a href="http://demian.wang/2021/06/05/Butterfly%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E9%A6%96%E9%A1%B5%E5%A4%A7%E5%9B%BE%E5%8A%A0%E8%BD%BD%E6%95%88%E6%9E%9C/">http://demian.wang/2021/06/05/Butterfly%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E9%A6%96%E9%A1%B5%E5%A4%A7%E5%9B%BE%E5%8A%A0%E8%BD%BD%E6%95%88%E6%9E%9C/</a></p>]]></content>
+    <content type="html"><![CDATA[<p>欢迎你来到我的博客网站！这是我的一方小天地呀~</p><p>这里将会记录我的学习和知识…</p><h3 id="搭建bolg资料和网站"><a href="#搭建bolg资料和网站" class="headerlink" title="搭建bolg资料和网站"></a>搭建bolg资料和网站</h3><p>在线md： <a href="https://pandao.github.io/editor.md/">https://pandao.github.io/editor.md/</a><br>Butterfly 主题的详细配置：<br><a href="https://liangshenglei.github.io/2023/03/06/Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/index.html">https://liangshenglei.github.io/2023/03/06/Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/index.html</a><br>背景：<br>1.Hexo-Butterfly主题优化-设置网站首页显示背景、文章最上方不显示背景 <a href="https://blog.csdn.net/zzq0523/article/details/122954271">https://blog.csdn.net/zzq0523/article/details/122954271</a><br>2. Butterfly主题优化首页大图加载效果 <a href="http://demian.wang/2021/06/05/Butterfly%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E9%A6%96%E9%A1%B5%E5%A4%A7%E5%9B%BE%E5%8A%A0%E8%BD%BD%E6%95%88%E6%9E%9C/">http://demian.wang/2021/06/05/Butterfly%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E9%A6%96%E9%A1%B5%E5%A4%A7%E5%9B%BE%E5%8A%A0%E8%BD%BD%E6%95%88%E6%9E%9C/</a></p><p>分类以及标签页<br>1.Hexo使用攻略-添加分类及标签<a href="https://www.jianshu.com/p/e17711e44e00">https://www.jianshu.com/p/e17711e44e00</a></p>]]></content>
     
     
       
@@ -56,15 +64,19 @@
     
     
     
+    <category term="web前端" scheme="http://example.com/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
+    <title>hexo的基础配置</title>
     <link href="http://example.com/2023/10/26/hello-world/"/>
     <id>http://example.com/2023/10/26/hello-world/</id>
     <published>2023-10-26T11:42:54.873Z</published>
-    <updated>2023-10-26T11:42:54.874Z</updated>
+    <updated>2023-10-30T08:49:37.437Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
