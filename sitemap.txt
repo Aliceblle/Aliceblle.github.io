@@ -9,8 +9,8 @@ http://example.com/tags/index.html
 http://example.com/
 http://example.com/tags/%E5%89%8D%E7%AB%AF/
 http://example.com/tags/DOM/
-http://example.com/tags/vue/
 http://example.com/tags/html/
 http://example.com/tags/css/
 http://example.com/tags/js/
+http://example.com/tags/vue/
 http://example.com/categories/web%E5%89%8D%E7%AB%AF/
